@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body {
+            background-color: rgb(83, 83, 139); /*COMENTÁRIO EM CSS*/
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(194, 194, 11);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World!</h1>   <!-- COMENTÁRIO EM HTML -->
+    <p>Já me livrei da maldição!!</p>
+    <script>       // o window.prompt converte tudo para String, o Number.parseInt ou Float força a variável n1 e n2 receberem número
+      let n1 = Number.parseInt(window.prompt("Digite um número:"));
+      let n2 = parseFloat(window.prompt("Digite outro número:"));
+      let s = n1 + n2;
+      window.alert("A soma dos números é: " + s);
+      window.alert(`A soma dos números é: ${s}`);  // precisa usar crase `  (template string)
+
+    //   String(2);  para converter de número para String
+    //   2.toString;
+    window.alert("A soma dos números é: " + String(s));
+   
+    // s.length
+    // s.toUpperCase()
+    // s.toLowerCase()
+
+    let nome = leAnDRo
+    window.alert(nome.length);
+
+
+    </script>
+</body>
+</html>

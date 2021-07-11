@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex005</title>
+    <style>
+        body {
+            background: rgb(16, 104, 89);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>    
+    <p nome="teste 1">Aqui vai o resultado</p>
+    <p class="teste 2">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id='msg'>Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]  // ou var p1 = window.document.getElementsByTagName('p')[0] 
+                                                        // o 0 é o 1º parágrafo. [1] é para referenciar ao 2º parágrafo
+        document.write(p1.innerText)    // ou window.document.write(p1.innerText)
+        p1.style.color = 'black'
+
+        var d = document.getElementById("msg")
+        d.style.background = 'red'
+        d.innerText = 'Estou aguardando...'  // alterei o texto da div "Clique em mim"
+
+        var p = document.querySelector('div#msg')
+        p.style.color = 'yellow'
+        
+        var j = document.getElementsByClassName('teste 2')[0] // usei [0] pq mesmo sendo o 2º p, 
+                                                              // mas é o 1º p da classe 'teste 2'
+        j.style.color = 'blue'
+
+        
+
+
+     
+    </script>
+
+</body>
+</html>

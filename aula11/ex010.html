@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type='number' name='txtvel' id='txtvel'> Km/h
+    <input type='button' value='Verificar' onclick='calcular()'>
+    <div id='res'></div>
+
+    <!--
+    <h1>Nacionalidade</h1>
+    Qual é o seu país de origem? <input type='text' name='txtpais' id='txtpais'>
+    <input type='button' value='Verificar' onclick="verificarNac()">
+    <div id='nac'></div>
+    -->
+    
+    
+    <script>               
+        function calcular(){
+            var txtv = document.querySelector('input#txtvel');            
+            var res = document.querySelector('div#res');
+            var vel = Number(txtv.value);
+            res.innerHTML = `<p>A sua velocidade é <strong>${vel}Km/h</strong>.</p>`;
+            if(vel > 60){
+                res.innerHTML += `<p>Velocidade limite: 60Km/h. <strong>MULTADO!</strong></p>`;
+            }
+            res.innerHTML += `<p>Dirija com segurança.</p>`; 
+        }
+        // function verificarNac(){
+        //     var txtNac = document.querySelector('input#txtpais');
+        //     var nac = document.querySelector('div#nac');
+        //     var tNac = Text(txtNac.value);
+            
+
+        //     if(tNac == 'Brasil'){
+        //         nac.innerHTML = '<p>Sua nacionalidade é Brasileira.</p>'
+        //     }else{
+        //         nac.innerHTML = '<p>Sua nacionalidade é estrangeira.</p>'
+        //     }
+        // }
+        
+    </script>
+</body>
+</html>

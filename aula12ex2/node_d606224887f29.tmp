@@ -1,0 +1,14 @@
+// alert('Meu primeiro site!');
+
+function escrever() {
+    var texto = 'Testando...';
+    var texDinamico = texto.split("");
+    // console.log(texDinamico);
+    for(letra of texDinamico){
+        setInterval(() => { 
+            console.log(letra); 
+        }, 1000);
+    }
+}
+
+escrever();

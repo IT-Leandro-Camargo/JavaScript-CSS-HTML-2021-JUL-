@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome =  "Leandro"//window.prompt('Qual é seu nome?');
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.<br/>`)
+
+        var n1 = 1545.5;
+        document.write(n1 + '<br/>');
+        n2 = n1.toFixed(2);  //1545.50
+        document.write(n2 + '<br/>');
+        n3 = n1.toFixed(2).replace('.', ',');  //1545,50
+        document.write(n3 + '<br/>');
+        n4 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}); //no NodeJS aparece R$ 1.545,50
+        document.write(n4 + '<br/>');
+        n4 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}); //no NodeJS aparece US$ 1.545,50
+        document.write(n4 + '<br/>');
+        n4 = n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}); //no NodeJS aparece € 1.545,50
+        document.write(n4 + '<br/>');
+
+        var preco = Number(window.prompt("Qual o preço do produto?"));
+        var precoFinal = preco += preco * .1;  // para acrescentar 10% ao valor de preço
+        var precoFinalFormatado = precoFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+        document.write(precoFinalFormatado +'<br>');
+
+
+        var valor = Number(window.prompt('Qual o valor?'));
+        var valorFinal = valor += valor * .1;        
+        var valorFinalFormatado = valorFinal.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+        document.write(valorFinalFormatado + '<br>');    // coloquei en-US para a representação vir com "." para os cents
+
+        var meuNome = 'Leandro';
+        var meuNomeMaiusculo = meuNome.toUpperCase();
+        var meuNomeMinusculo = meuNome.toLowerCase();
+        document.write(meuNomeMaiusculo + '<br>');
+        document.write(meuNomeMinusculo + '<br>');
+
+        var valorSifrao = valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'});
+        document.write(valorSifrao + '<br>');
+
+
+
+        
+
+    </script>
+
+</body>
+</html>
