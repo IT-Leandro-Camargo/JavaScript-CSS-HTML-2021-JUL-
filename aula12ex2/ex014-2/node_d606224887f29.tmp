@@ -5,9 +5,8 @@ function escrever() {
     var texDinamico = texto.split("");
     // console.log(texDinamico);
     for(letra of texDinamico){
-        console.log(letra);
         setInterval(() => { 
-             
+            console.log(letra); 
         }, 1000);
     }
 }

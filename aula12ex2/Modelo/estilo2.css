@@ -1,10 +1,10 @@
 body {
-    background-color: greenyellow;
+    background-color: rgb(114, 153, 58);
     font: normal 15pt Arial;
 }
 
 header {
-    color: rgb(44, 44, 44);
+    color: rgb(0, 0, 0);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30pt;    
     text-align: center;  
@@ -13,16 +13,31 @@ header {
 section {
     background-color: rgba(2, 2, 2, 0.842);
     color: black;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 20px;
-    width: 50%;
+    padding: 20px;
+    width: 500px;
     margin: auto;
-    box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.281);
+    box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.575);
+    text-align: center;
 }
 
 div {
     color: rgb(1, 250, 1);    
+}
+
+#msg {
+    font-size: 20pt;
+    margin: 10px;
+}
+
+#msg2 {
+    margin: 10px;
+}
+
+#imagem {
+    margin: 30px;
+    border-radius: 200px;
 }
 
 footer {
